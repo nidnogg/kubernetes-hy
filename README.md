@@ -71,7 +71,10 @@ This will create a deployment and a corresponding pod with the specified image.
 ```bash
 ❯ kubectl get deployments
 ❯ kubectl get pods
-❯ kubectl logs -f <pod name> # for pod logging, `-f` will continuously stream output
+# For pod logging, `-f` will continuously stream output
+❯ kubectl logs -f <pod name>
+# Redeploy using .yaml, instead of using `kubectl delete <deployment>` (delete in k8s is an anti-pattern)
+❯ kubectl apply -f <path/URL to deployment.yaml>
 ```
 
 
