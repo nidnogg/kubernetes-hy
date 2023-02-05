@@ -15,6 +15,19 @@ Solutions to the <a href="https://devopswithkubernetes">DevOps with Kubernetes</
 
 
 # Notes
+
+## Cluster management
+To create a basic cluster with 2 agents (specified by the `-a` option), use:
+```bash
+❯ k3d cluster create -a 2
+```
+
+Commands to be used before and after development on said cluster:
+```bash
+❯ k3d cluster start
+❯ k3d cluster stop
+```
+
 ## Pushing to Docker Hub
 To push an image to Docker Hub, first build the image with:
 ```bash
