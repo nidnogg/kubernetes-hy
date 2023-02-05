@@ -1,10 +1,10 @@
 // use axum_server::Handle;
-use std::time::{Duration};
-use time;
 use std::thread::sleep;
+use std::time::Duration;
+use time;
 
-use rand::{thread_rng, Rng};
 use rand::distributions::Alphanumeric;
+use rand::{thread_rng, Rng};
 
 /// This app prints out a randomly generated
 /// `String` accompanied by a timestamp every 5 seconds
